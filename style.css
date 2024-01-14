@@ -59,7 +59,21 @@ h3 {
   font-size: 1rem;
   font-weight: bold;
 }
+/* Theme switcher --------------------------------------------- */
 
+
+.theme-switcher {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-text);
+  font-size: 1.5rem; /* Adjust size as needed */
+  transition: color 0.3s ease;
+}
+
+.theme-switcher:hover {
+  color: var(--link-hover);
+}
 /* Navigation --------------------------------------------- */
 
 .nav {
