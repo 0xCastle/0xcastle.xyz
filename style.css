@@ -1,0 +1,331 @@
+:root {
+  /* Light theme colors */
+  --primary-background: #F9FAFB;
+  --primary-text: #000000;
+  --link-text: #0000EE;
+  --link-hover: #9A1E13;
+
+  /* Dark theme colors */
+  --dark-background: #121212;
+  --dark-text: #FFFFFF;
+  --dark-link-text: #BB86FC;
+  --dark-link-hover: #FF8C00;
+}
+
+/* Default Styles ----------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  font-family: 'CMU Serif', serif;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+body.dark-theme {
+  --primary-background: var(--dark-background);
+  --primary-text: var(--dark-text);
+  --link-text: var(--dark-link-text);
+  --link-hover: var(--dark-link-hover);
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Navigation --------------------------------------------- */
+
+.nav {
+  max-width: 1200px;
+  border-top: #000000 2px solid;
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-links {
+  color: var(--link-text);
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+
+}
+
+.nav-link-cta {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #9A1E13;
+}
+
+/* Title -------------------------------------------------- */
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Abstract ----------------------------------------------- */
+
+.abstract {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  margin-bottom: 5rem;
+}
+
+.abstract-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.abstract-text {
+  text-align: justify;
+}
+
+/* Section ----------------------------------------------- */
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+
+}
+
+.section-subtitle {
+
+}
+
+.section-text {
+  text-align: justify;
+}
+
+/* Footer ------------------------------------------------- */
+
+.footer {
+  max-width: 1200px;
+  border-top: #000000 2px solid;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Utility ------------------------------------------------ */
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Media Queries ------------------------------------------ */
+
+@media (max-width: 800px) {
+  .nav-links {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .date {
+    font-size: 1.25rem;
+  }
+
+  .abstract-title {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .abstract-title {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Fonts -------------------------------------------------- */
+
+/* Regular */
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('/fonts/cmunrm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('/fonts/cmunbx.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('/fonts/cmunti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'CMU Serif';
+  src: url('/fonts/cmunbi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
