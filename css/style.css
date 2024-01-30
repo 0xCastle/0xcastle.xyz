@@ -1,4 +1,12 @@
 
+/* Body ------------------------------------------------ */
+
+body {
+  background-image: url('../images/paper-texture.jpg');
+  background-repeat: repeat;
+  background-color: #f8f8f8; /* Choose a color that matches your texture */
+}
+
 
 /* Slideshow ------------------------------------------------ */
 

@@ -113,6 +113,8 @@
     --border-width-thick: 2.27px;
     --sidenote-target-border-color: hsl(55, 55%, 70%);
     --footnotes-border-color: hsl(0, 0%, 39%);
+    --body-background-image: url('../images/paper-texture.jpg');
+
     --text-indent-size: 1.463rem; /* In 12pt [Latin Modern font] LaTeX article
     \parindent =~ 17.625pt; taking also into account the ratio
     1pt[LaTeX] = (72 / 72.27) * 1pt[HTML], with default 12pt/1rem LaTeX.css font
@@ -132,6 +134,8 @@
     --sidenote-target-border-color: hsl(0, 0%, 59%);
     --footnotes-border-color: hsl(0, 0%, 59%);
     --proof-symbol-filter: invert(80%);
+    --body-background-image: url('../images/paper-texture-dark.jpeg');
+
   }
   
   @media (prefers-color-scheme: dark) {
@@ -195,7 +199,7 @@
   
     color: var(--body-color);
     background-color: var(--body-bg-color);
-  
+    background-image: var(--body-background-image);
     text-rendering: optimizeLegibility;
   }
   
