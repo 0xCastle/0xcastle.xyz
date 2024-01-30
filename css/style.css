@@ -4,7 +4,8 @@
 body {
   background-image: url('../images/paper-texture.jpg');
   background-repeat: repeat;
-  background-color: #f8f8f8; /* Choose a color that matches your texture */
+  background-color: #f8f8f8; 
+
 }
 
 
@@ -85,13 +86,7 @@ html {
 
 /* Footer ------------------------------------------------- */
 
-.footer {
-  max-width: 1200px;
-  border-top: #000000 2px solid;
-  margin-top: 6rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .footer-links {
   display: flex;
@@ -130,13 +125,6 @@ html {
 }
 /* Navigation --------------------------------------------- */
 
-.nav {
-  max-width: 1200px;
-  border-top: #000000 2px solid;
-  margin-top: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .nav-links {
   color: var(--link-text);
