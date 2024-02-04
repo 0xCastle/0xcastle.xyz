@@ -534,6 +534,13 @@
   }
   
   /* Center align author name, use small caps and add vertical spacing  */
+  .subheader {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
+  }
+
   .author {
     margin: 0.85rem 0;
     font-variant-caps: small-caps;

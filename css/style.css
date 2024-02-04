@@ -8,6 +8,13 @@ body {
 
 }
 
+.logo {
+  display: block;
+  margin: 20px auto;
+  height: 70px;
+  width: auto;
+}
+
 /* Grid ---------------------------------------------- */
 
 .grid-container {
