@@ -4,6 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleButton.addEventListener("click", function () {
     bodyElement.classList.toggle("latex-dark");
+
+    let images = document.querySelectorAll('.grid-image');
+    if (bodyElement.classList.contains("latex-dark")) {
+      // change images to dark theme for dark mode
+      images.forEach(img => {
+        img.src = img.src.replace('_light-theme', '_dark-theme');
+      });
+    } else {
+      //change images to light theme for light mode
+      images.forEach(img => {
+        img.src = img.src.replace('_dark-theme', '_light-theme');
+      });
+    }
   });
 
   // Optional: Save user preference to localStorage
