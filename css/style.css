@@ -196,9 +196,18 @@ html {
   color: #9A1E13;
 }
 
+.apply-button {
+display: none;
+}
+
 /* Media Queries ------------------------------------------ */
 
+
 @media (max-width: 800px) {
+  .apply-button {
+    display: block;
+    text-align: end;
+   }
   .nav-links {
     display: none;
   }
