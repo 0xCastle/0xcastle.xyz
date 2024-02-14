@@ -27,6 +27,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <a href="https://forms.0xcastle.xyz/" class="apply-button emphasize">Apply</a>
@@ -180,36 +185,68 @@
         </div>
         <h3 class="section-title">3.2. Partners</h3>
         <div class="section-text">
-          <div class="grid-container">
-            <div class="grid-item">
-              <a href="https://www.tum-blockchain.com/">
-                <img
-                  class="grid-image"
-                  src="images/logos/tbc_light-theme.png"
-                  alt="TUM Blockchain Club"
-                />
-              </a>
-              <p>TUM Blockchain Club</p>
-            </div>
-            <div class="grid-item">
-              <a href="https://www.blockchainacceleration.org/">
-                <img
-                  class="grid-image"
-                  src="images/logos/baf_light-theme.png"
-                  alt="Blockchain Acceleration Foundation"
-                />
-              </a>
-              <p>Blockchain Acceleration Foundation</p>
-            </div>
-            <div class="grid-item">
-              <a href="https://kryptosphere.org/en/">
-                <img
-                  class="grid-image"
-                  src="images/logos/Kryptosphere_light-theme.png"
-                  alt="Kryptosphere"
-                />
-              </a>
-              <p>Kryptosphere</p>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="https://www.tum-blockchain.com/">
+                  <img
+                    class="grid-image tum-logo"
+                    src="images/logos/tbc_light-theme.png"
+                    alt="TUM"
+                  />
+                </a>
+                <p>TUM</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.blockchainacceleration.org/">
+                  <img
+                    class="grid-image baf-logo"
+                    src="images/logos/baf_light-theme.png"
+                    alt="BAF"
+                  />
+                </a>
+                <p>BAF</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://kryptosphere.org/en/">
+                  <img
+                    class="grid-image kryptosphere-logo"
+                    src="images/logos/Kryptosphere_light-theme.png"
+                    alt="Kryptosphere"
+                  />
+                </a>
+                <p>Kryptosphere</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://bsaepfl.ch/">
+                  <img
+                    class="grid-image"
+                    src="images/logos/EPFL.png"
+                    alt="EPFL"
+                  />
+                </a>
+                <p>EPFL</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.cornellblockchain.org/">
+                  <img
+                    class="grid-image cornell-logo"
+                    src="images/logos/Cornell.png"
+                    alt="Cornell"
+                  />
+                </a>
+                <p>Cornell</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://cambridgeblockchain.org/">
+                  <img
+                    class="grid-image cambridge-logo"
+                    src="images/logos/cambridge.png"
+                    alt="Cambridge"
+                  />
+                </a>
+                <p>Cambridge</p>
+              </div>
             </div>
           </div>
           <p>
@@ -292,5 +329,43 @@
       </div>
     </footer>
     <script src="js/index.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var mySwiper = new Swiper('.mySwiper', {
+          slidesPerView: 3, // Display 3 slides at a time
+          spaceBetween: 30, // Adjust spacing between slides
+          loop: true,
+          speed: 4000, // Adjust for a slower, smooth transition
+          autoplay: {
+            delay: 0, // Essentially no delay for continuous effect
+            disableOnInteraction: false,
+          },
+          loopedSlides: 3, // Match this with slidesPerView or adjust based on your total slides
+          centeredSlides: false, // Set to false to align slides to the start of the container
+          freeMode: true,
+          freeModeMomentum: false,
+          freeModeMomentumBounce: false,
+          freeModeMomentumRatio: 1,
+          freeModeMomentumVelocityRatio: 1,
+
+          // Responsive breakpoints
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 4, // Display more slides for larger screens
+              spaceBetween: 40,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
