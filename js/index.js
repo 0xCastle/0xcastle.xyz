@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("dark-mode-toggle");
+  /**const toggleButton = document.getElementById("dark-mode-toggle");
   const bodyElement = document.body;
 
   toggleButton.addEventListener("click", function () {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       localStorage.removeItem("theme");
     }
-  });
+  });**/
 });
 
 let slideIndex = 1;
