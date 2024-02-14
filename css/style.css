@@ -204,8 +204,8 @@ html {
 /* Theme switcher --------------------------------------------- */
 
 
-#dark-mode-toggle {
-  /* Style your button */
+/**#dark-mode-toggle {
+  /* Style your button 
   padding: 10px;
   margin: 5px 0;
   background-color: #eee;
@@ -216,6 +216,20 @@ html {
 
 #dark-mode-toggle:hover {
   background-color: #ddd;
+}*/
+
+.apply-button {
+  display: block;
+  position: fixed; /* Ensures the button is fixed relative to the viewport */
+  top: 10px; /* Adjust based on your header's height or desired position */
+  right: 10px; /* Adjust for spacing from the right edge of the viewport */
+  padding: 10px 20px; /* Padding inside the button for spacing */
+  background-color: #eee; /* Light grey background, as previously styled */
+  color: #000; /* Text color */
+  text-decoration: none; /* Removes underline from the link */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-align: center; /* Center the text inside the button */
+  z-index: 1000; /* Ensure it sits above other content */
 }
 /* Navigation --------------------------------------------- */
 
