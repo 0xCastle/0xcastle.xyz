@@ -88,13 +88,19 @@ body {
 
 .cornell-logo {
   margin: auto;
-  width: 70%; /* Adjust the logo size to 80% of its container */
+  width: 60%; /* Adjust the logo size to 80% of its container */
   height: auto; /* Maintain aspect ratio */
 }
 
 .cambridge-logo {
   position: relative;
   top: 20px;
+}
+
+.waterloo-logo {
+  margin: auto;
+  width: 70%;
+  height: auto;
 }
 
 /* Slideshow ------------------------------------------------ */
