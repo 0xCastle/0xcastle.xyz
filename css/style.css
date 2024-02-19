@@ -67,42 +67,6 @@ body {
   transition-timing-function : linear;
 }
 
-
-.baf-logo {
-  margin: auto;
-  width: 80%; /* Adjust the logo size to 80% of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.tum-logo {
-  margin: auto;
-  width: 90%; /* Adjust the logo size to 80% of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.kryptosphere-logo {
-  margin: auto;
-  width: 150%; /* Adjust the logo size to 80% of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.cornell-logo {
-  margin: auto;
-  width: 60%; /* Adjust the logo size to 80% of its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.cambridge-logo {
-  position: relative;
-  top: 20px;
-}
-
-.waterloo-logo {
-  margin: auto;
-  width: 60%;
-  height: auto;
-}
-
 /* Slideshow ------------------------------------------------ */
 
 .slideshow-container {
