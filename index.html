@@ -170,8 +170,15 @@
           </p>
         </div>
         <h3 class="section-title">3.2. Partners</h3>
+        <p>
+          0xCastle allocates some slots for educational and community
+          partners, supporting their presence through financial aid. Beyond participation, educational non-profits, such as
+          university blockchain clubs, can apply to present their
+          organization's research at the retreat.
+        </p>
+        <h4 class="section-title">3.2.1 Educational Partners</h4>
         <div class="section-text">
-          <div class="swiper mySwiper">
+          <div class="swiper educationSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a href="https://www.tum-blockchain.com/">
@@ -224,16 +231,6 @@
                 <p>BAF</p>
               </div>
               <div class="swiper-slide">
-                <a href="https://cointelegraph.com/">
-                  <img
-                    class="grid-image"
-                    src="images/logos/Cointelegraph.png"
-                    alt="Cointelegraph"
-                  />
-                </a>
-                <p>Cointelegraph</p>
-              </div>
-              <div class="swiper-slide">
                 <a href="https://bsaepfl.ch/">
                   <img
                     class="grid-image"
@@ -273,44 +270,54 @@
                 </a>
                 <p>0xCollective</p>
               </div>
-              <div class="swiper-slide">
-                <a href="https://bundesblock.de/en/">
-                  <img
-                    class="grid-image"
-                    src="images/logos/Bundesblock.png"
-                    alt="Blockchain Bundesverband"
-                  />
-                </a>
-                <p>Bundesblock</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://club.cryptonomads.org/">
-                  <img
-                    class="grid-image"
-                    src="images/logos/CryptoNomads.png"
-                    alt="Crypto Nomads Club"
-                  />
-                </a>
-                <p>Nomads</p>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://europeanblockchainassociation.org/">
-                  <img
-                    class="grid-image"
-                    src="images/logos/EBA.png"
-                    alt="European Blockchain Association"
-                  />
-                </a>
-                <p>EBA</p>
-              </div>
             </div>
           </div>
-          <p>
-            0xCastle allocates some slots for educational and community
-            partners, supporting their presence through financial aid. Beyond participation, educational non-profits, such as
-            university blockchain clubs, can apply to present their
-            organization's research at the retreat.
-          </p>
+          <h4 class="section-title">3.2.2 Community Partners</h4>
+          <div class="section-text">
+            <div class="swiper communitySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="https://cointelegraph.com/">
+                    <img
+                      class="grid-image"
+                      src="images/logos/Cointelegraph.png"
+                      alt="Cointelegraph"
+                    />
+                  </a>
+                  <p>Cointelegraph</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://bundesblock.de/en/">
+                    <img
+                      class="grid-image"
+                      src="images/logos/Bundesblock.png"
+                      alt="Blockchain Bundesverband"
+                    />
+                  </a>
+                  <p>Bundesblock</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://club.cryptonomads.org/">
+                    <img
+                      class="grid-image"
+                      src="images/logos/CryptoNomads.png"
+                      alt="Crypto Nomads Club"
+                    />
+                  </a>
+                  <p>Nomads</p>
+                </div>
+                <div class="swiper-slide">
+                  <a href="https://europeanblockchainassociation.org/">
+                    <img
+                      class="grid-image"
+                      src="images/logos/EBA.png"
+                      alt="European Blockchain Association"
+                    />
+                  </a>
+                  <p>EBA</p>
+                </div>
+              </div>
+            </div>
         </div>
         <h3 class="section-title">3.3 Sponsors</h3>
         <div class="section-text">
@@ -386,39 +393,44 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var mySwiper = new Swiper('.mySwiper', {
-          slidesPerView: 3, // Display 3 slides at a time
-          spaceBetween: 30, // Adjust spacing between slides
-          loop: true,
-          speed: 3000, // Adjust for a slower, smooth transition
-          autoplay: {
-            delay: 0, // Essentially no delay for continuous effect
-            disableOnInteraction: false,
-          },
-          loopedSlides: 3, // Match this with slidesPerView or adjust based on your total slides
-          centeredSlides: false, // Set to false to align slides to the start of the container
-          freeMode: true,
-          freeModeMomentum: false,
-          freeModeMomentumBounce: false,
-          freeModeMomentumRatio: 1,
-          freeModeMomentumVelocityRatio: 1,
-
-          // Responsive breakpoints
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
+        function initializeSwiper(selector) {
+          return new Swiper(selector, {
+            slidesPerView: 3, // Display 3 slides at a time
+            spaceBetween: 30, // Adjust spacing between slides
+            loop: true,
+            speed: 3000, // Adjust for a slower, smooth transition
+            autoplay: {
+              delay: 0, // Essentially no delay for continuous effect
+              disableOnInteraction: false,
             },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 15,
+            loopedSlides: 3, // Match this with slidesPerView or adjust based on your total slides
+            centeredSlides: false, // Set to false to align slides to the start of the container
+            freeMode: true,
+            freeModeMomentum: false,
+            freeModeMomentumBounce: false,
+            freeModeMomentumRatio: 1,
+            freeModeMomentumVelocityRatio: 1,
+    
+            // Responsive breakpoints
+            breakpoints: {
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+              1024: {
+                slidesPerView: 4, // Display more slides for larger screens
+                spaceBetween: 20,
+              },
             },
-            1024: {
-              slidesPerView: 4, // Display more slides for larger screens
-              spaceBetween: 20,
-            },
-          },
-        });
+          });
+        }
+    
+        var eduSwiper = initializeSwiper('.educationSwiper');
+        var comSwiper = initializeSwiper('.communitySwiper');
       });
     </script>
   </body>
