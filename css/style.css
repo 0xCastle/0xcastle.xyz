@@ -1,10 +1,64 @@
+/* Default Styles ----------------------------------------- */
 
-/* Body ------------------------------------------------ */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-image: url('../images/paper-texture.jpg');
   background-repeat: repeat;
 }
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a.emphasize {
+  color: var(--link-visited);
+  text-decoration: underline;
+}
+
+a.emphasize:hover {
+  color: var(--link-visited);
+  text-decoration: underline;
+}
+
+
+/* Utility ------------------------------------------------- */
+
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+
+/* Navigation --------------------------------------------- */
+
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  height: 50px; /* Example height of your navbar */
+  line-height: 50px; /* Set line-height equal to the height of the navbar */
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+} 
+
+
+/* Logo --------------------------------------------------- */
+
 
 .logo {
   display: block;
@@ -13,17 +67,9 @@ body {
   width: auto;
 }
 
-.intext-link {
-  color: black;
-  text-decoration: underline;
-}
 
-.intext-link.emphasize {
-  color: var(--link-visited);
-  text-decoration: underline;
-}
+/* Automatic Swiper --------------------------------------- */
 
-/* Grid ---------------------------------------------- */
 
 .swiper {
   width: 100%;
@@ -70,7 +116,9 @@ body {
   transition-timing-function : linear;
 }
 
+
 /* Slideshow ------------------------------------------------ */
+
 
 .slideshow-container {
   position: relative;
@@ -109,7 +157,6 @@ body {
   user-select: none;
 }
 
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -133,20 +180,7 @@ body {
 }
 
 
-/* Default Styles ----------------------------------------- */
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Utility ------------------------------------------------- */
-
-.flex-grow {
-  flex-grow: 1;
-}
-
 /* Footer ------------------------------------------------- */
-
 
 
 .footer-links {
@@ -160,7 +194,6 @@ html {
 
 .footer-link {
   text-decoration: none;
-  color: #000000;
 }
 
 .footer-link:hover {
@@ -168,67 +201,7 @@ html {
 }
 
 
-/* Theme switcher --------------------------------------------- */
-
-
-/**#dark-mode-toggle {
-  /* Style your button 
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #eee;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#dark-mode-toggle:hover {
-  background-color: #ddd;
-}*/
-
-/* Navigation --------------------------------------------- */
-
-
-.nav-links {
-  color: var(--link-text);
-  display: flex;
-  flex-direction: row;
-  column-gap: 1.25rem;
-  padding: 1.5rem;
-}
-
-.nav-link {
-  color: black;
-  text-decoration: none;
-  height: 50px; /* Example height of your navbar */
-  line-height: 50px; /* Set line-height equal to the height of the navbar */
-  display: inline-block;
-}
-
-.nav-link-apply {
-  height: 50px; /* Example height of your navbar */
-  line-height: 50px; /* Set line-height equal to the height of the navbar */
-  display: inline-block;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
-  color: var(--link-hover);
-
-} 
-.nav-link.emphasize {
-  color: var(--link-visited);
-  text-decoration: underline;
-}
-
-
-.nav-link-cta {
-  text-decoration: underline;
-  font-weight: bold;
-  color: #9A1E13;
-}
-
-
-/* Media Queries ------------------------------------------ */
+/* Adaptive Layout ------------------------------------------ */
 
 
 @media (max-width: 800px) {
@@ -317,6 +290,10 @@ html {
   }
 }
 
+
+/* Dark Mode --------------------------------------------- */
+
+
 .only-dark-mode {
   display: none;
 }
@@ -335,14 +312,10 @@ html {
   }
 
   .nav-link {
-    color: hsl(0, 0%, 86%);
-  }
-
-  .intext-link {
-    color: hsl(0, 0%, 86%);
+    color: var(--link-color);
   }
   
   .footer-link {
-    color: hsl(0, 0%, 86%);
+    color: var(--link-color);
   }
 }
