@@ -4,8 +4,6 @@
 body {
   background-image: url('../images/paper-texture.jpg');
   background-repeat: repeat;
-  background-color: #f8f8f8; 
-
 }
 
 .logo {
@@ -319,3 +317,32 @@ html {
   }
 }
 
+.only-dark-mode {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: none;
+  }
+
+  .only-light-mode {
+    display: none;
+  }
+
+  .only-dark-mode {
+    display: block;
+  }
+
+  .nav-link {
+    color: hsl(0, 0%, 86%);
+  }
+
+  .intext-link {
+    color: hsl(0, 0%, 86%);
+  }
+  
+  .footer-link {
+    color: hsl(0, 0%, 86%);
+  }
+}
