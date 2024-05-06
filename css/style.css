@@ -212,6 +212,9 @@ a.emphasize:hover {
   .nav-link.emphasize {
     display:flex;
   }
+  .nav-link.mobile {
+    display:flex;
+  }
 
   .nav {
     border-top: none;
