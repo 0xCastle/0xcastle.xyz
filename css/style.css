@@ -201,6 +201,54 @@ a.emphasize:hover {
   text-decoration: underline;
 }
 
+/* Schedule */
+
+.date-links {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.date-links a.active-date {
+  text-decoration: underline;
+}
+
+.date-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.date-links a:hover {
+  text-decoration: underline;
+}
+
+.schedule-table {
+  width: 100%;
+  table-layout: fixed;
+  display: none;
+}
+
+.schedule-table.active-table {
+  display: table;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.schedule-table th {
+  background-color: #f2f2f2;
+}
+
+.time-col {
+  white-space: nowrap;
+  width: auto;
+}
+
 
 /* Adaptive Layout ------------------------------------------ */
 
