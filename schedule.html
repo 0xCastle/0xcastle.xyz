@@ -56,292 +56,454 @@
         <!-- Content -->
         <article>
             <div class="date-links">
-                <a data-date="27-05" onclick="showTable('27-05')" class="active-date">27.05</a>
+                <a data-date="26-05" onclick="showTable('26-05')">26.05</a>
+                <a data-date="27-05" onclick="showTable('27-05')">27.05</a>
                 <a data-date="28-05" onclick="showTable('28-05')">28.05</a>
                 <a data-date="29-05" onclick="showTable('29-05')">29.05</a>
                 <a data-date="30-05" onclick="showTable('30-05')">30.05</a>
                 <a data-date="31-05" onclick="showTable('31-05')">31.05</a>
             </div>
-            <table class="schedule-table" id="27-05" class="schedule-table" >
+            <div class="legend">
+                <span class="dot beginner"></span> Beginner
+                <span class="dot intermediate"></span> Intermediate
+                <span class="dot advanced"></span> Advanced
+                <span class="dot expert"></span> Expert
+            </div>
+            <table class="schedule-table" id="26-05">
                 <colgroup>
-                    <col style="width: 20%;">
-                    <col style="width: 60%;">
-                    <col style="width: 20%;">
+                    <col style="width: 5%;">
+                    <col style="width: 50%;">
+                    <col style="width: 45%;">
                 </colgroup>
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Name</th>
-                        <th>Speaker</th>
+                        <th>Event 1</th>
+                        <th>Event 2</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">08:00 AM</td>
+                        <td class="time-col">08:00PM</td>
+                        <td>Departure from Berlin</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">11:00PM</td>
+                        <td>Arrival to Castle & Check in</td>
+                        <td></td>
+                    </tr> 
+                </tbody>
+            </table>
+            <table class="schedule-table" id="27-05">
+                <colgroup>
+                    <col style="width: 5%;">
+                    <col style="width: 50%;">
+                    <col style="width: 45%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event 1</th>
+                        <th>Event 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-col">08:00AM</td>
+                        <td>Yoga & Meditation</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">08:00AM<br>10:00AM</td>
                         <td>Breakfast</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:00 AM</td>
-                        <td>Welcome & Opening</td>
-                        <td>Adrian Kögl</td>
+                        <td class="time-col" rowspan="2"></td>
+                        <td>Welcome & Opening</span></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:40 AM</td>
                         <td>Castle Tour</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">12:00 PM</td>
+                        <td class="time-col">12:00PM<br>02:00PM</td>
                         <td>Lunch</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">02:00 PM</td>
-                        <td>Fixing MEV: Agent-based  modelling of Execution Tickets</td>
-                        <td>TBA</td>
-                    </tr>
-                    <tr>
-                        <td class="time-col">02:40 PM</td>
-                        <td>1inch</td>
-                        <td>TBA</td>
-                    </tr>
-                    <tr>
-                        <td class="time-col">04:00 PM</td>
-                        <td>Bounded Reflective Oracles and Applications to Game Theory</td>
-                        <td>TBA</td>
-                    </tr>
-                    <tr>
-                        <td class="time-col">04:40 PM</td>
-                        <td>Escape Room</td>
+                        <td class="time-col" rowspan="2"></td>
+                        <td>Fixing MEV: Agent-based modelling of Execution Tickets
+                            <br><br>
+                            <i>Christian Haug - Ephema</i>
+                        </td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">05:10 PM</td>
-                        <td>A Network Analysis of DAOs</td>
-                        <td>TBA</td>
+                        <td>MEV Issues in Fusion 2
+                            <br><br>
+                            <i>Ilya Shkurenko and Nikita Kozlov - 1inch</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">06:00 PM</td>
-                        <td>Implication of AI Tools DAO Governance</td>
-                        <td>TBA</td>
+                        <td class="time-col">03:15PM<br>04:00PM</td>
+                        <td>Coffee Break</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col" rowspan="4"></td>
+                        <td>Blockspace markets<span class="dot expert"></span>
+                            <br><br>
+                            <i>Andrew Macpherson - Shtuka Research</i>
+                        </td>
+                        <td>Escape Room</td>
+                    </tr>
+                    <tr>
+                        <td>Bounded Reflective Oracles and Applications to Game Theory <span class="dot advanced"></span>
+                            <br><br>
+                            <i>Yudhister Kumar - MATS / FOCAL@CMU</i>
+                            </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Implication of AI Tools DAO Governance <span class="dot beginner"></span>
+                            <br><br>
+                            <i>Monica Tsang - University of Waterloo</i>
+                            </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Defining Standards and Improving Composability of Data in Decentralized Networks with The Graph <span class="dot beginner"></span>
+                            <br><br>
+                            <i>Kevin Jones - The Graph</i>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">06:00PM<br>08:00PM</td>
+                        <td>Dinner</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">08:00PM<br>11:00PM</td>
+                        <td>Cocktail Hour</td>
+                        <td></td>
                     </tr>
                 </tbody>
-            </table>
-            
+            </table>            
             <table class="schedule-table" id="28-05" >
                 <colgroup>
-                    <col style="width: 20%;">
-                    <col style="width: 60%;">
-                    <col style="width: 20%;">
+                    <col style="width: 5%;">
+                    <col style="width: 50%;">
+                    <col style="width: 45%;">
                 </colgroup>
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Name</th>
-                        <th>Speaker</th>
+                        <th>Event 1</th>
+                        <th>Event 2</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">08:00 AM</td>
+                        <td class="time-col">08:00AM<br>10:00AM</td>
                         <td>Breakfast</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:00 AM</td>
-                        <td>Verifiable Credentials on chain</td>
-                        <td>TBA (Dfinity)</td>
+                        <td class="time-col" rowspan="3"></td>
+                        <td>Verifiable Credentials on chain <span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Frederik Rothenberger - Dfinity</i>
+                        </td>
+                        <td>Spa (if weather good)</td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:40 AM</td>
-                        <td>Securing cross-chain communication</td>
-                        <td>TBA (Ava Labs)</td>
+                        <td>Securing cross-chain communication
+                            <br><br>
+                            <i>Martin Eckardt - Ava Labs</i>
+                        </td>
+                        <td>Spa (if weather good)</td>                    </tr>
+                    <tr>
+                        <td>Problems when building a relayer and how to solve them <span class="dot advanced"></span>
+                            <br><br>
+                            <i>Hugo Montenegro - Peanut Protocol</i>
+                        </td>
+                        <td>Spa (if weather good)</td>
                     </tr>
                     <tr>
-                        <td class="time-col">11:20 AM</td>
-                        <td>Problems when building a relayer and how to solve them</td>
-                        <td>TBA</td>
-                    </tr>
-                    <tr>
-                        <td class="time-col">12:00 PM</td>
+                        <td class="time-col">12:00PM<br>02:00PM</td>
                         <td>Lunch</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">02:00 PM</td>
-                        <td>Ordinals & Runes</td>
-                        <td>TBA</td>
-                    </tr>
-                    <tr>
-                        <td class="time-col">02:40 PM</td>
-                        <td>Escape Room</td>
+                        <td class="time-col" rowspan="2"></td>
+                        <td>How to hack on Bitcoin: Runes & Ordinals
+                            <br><br>
+                            <i>Raphael Schleithoff - Ordinals</i>
+                        </td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">04:00 PM</td>
-                        <td>Intro to Elliptic Curve Crypto</td>
-                        <td>TBA</td>
+                        <td>History of applications on æternity<span class="dot beginner"></span>
+                            <br><br>
+                            <i>Philipp Piwowarsky - æternity</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">05:00 PM</td>
-                        <td>KZG and Formal Verification</td>
-                        <td>TBA</td>
+                        <td class="time-col">03:15PM<br>04:00PM</td>
+                        <td>Coffee Break</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">06:00 PM</td>
-                        <td>FRI, STIR, Binius PCS</td>
-                        <td>TBA</td>
+                        <td class="time-col" rowspan="3"></td>
+                        <td>Intro to Elliptic Curve Crypto<span class="dot beginner"></span>
+                            <br><br>
+                            <i>Anirudha Bose - Brave</i>
+                        </td>
+                        <td>Escape Room</td>
                     </tr>
-
+                    <tr>
+                        <td>KZG and Formal Verification<span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Tobias Rothmann - TUM/TBC</i>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>FRI, STIR, Binius PCS
+                            <br><br>
+                            <i>Ignacio Manzur - Nethermind</i>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">06:00PM<br>08:00PM</td>
+                        <td>Dinner</td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
             
             <table class="schedule-table" id="29-05" >
                 <colgroup>
-                    <col style="width: 20%;">
-                    <col style="width: 60%;">
-                    <col style="width: 20%;">
+                    <col style="width: 5%;">
+                    <col style="width: 50%;">
+                    <col style="width: 45%;">
                 </colgroup>
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Name</th>
-                        <th>Speaker</th>
+                        <th>Event 1</th>
+                        <th>Event 2</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">08:00 AM</td>
+                        <td class="time-col">08:00AM</td>
+                        <td>Yoga & Meditation</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">08:00AM<br>10:00AM</td>
                         <td>Breakfast</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:00 AM</td>
-                        <td>New trends in lookup and folding schemes</td>
-                        <td>TBA</td>
+                        <td class="time-col" rowspan="3"></td>
+                        <td>Multi-Polynomial Commitments<span class="dot advanced"></span>
+                            <br><br>
+                            <i>Sergey Yakovenko - Aztec</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:40 AM</td>
-                        <td>PlonK</td>
-                        <td>TBA</td>
+                        <td>PlonK<span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Marek Kirejczyk - vlayerc</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">11:20 AM</td>
-                        <td>Multi-Polynomial Commitments</td>
-                        <td>TBA</td>
+                        <td>STARKs</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">12:00 PM</td>
+                        <td class="time-col">12:00PM<br>02:00PM</td>
                         <td>Lunch</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">02:00 PM</td>
-                        <td>The current state of FHE</td>
-                        <td>TBA</td>
+                        <td class="time-col" rowspan="2"></td>
+                        <td>New trends in lookup and folding schemes<span class="dot expert"></span>
+                            <br><br>
+                            <i>Albert Garreta - Nethermind</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col" rowspan="3">04:00 PM</td>
+                        <td>The current state of FHE<span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Murat Saglam - Self Employed</i>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">03:15PM<br>04:00PM</td>
+                        <td>Coffee Break</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col" rowspan="2"></td>
                         <td>Research Group</td>
-                        <td></td>
+                        <td>Escape Room</td>
                     </tr>
                     <tr>
-                        <td>Escape Room (04:00-04:40 PM)</td>
-                        <td></td>
+                        <td>Research Group</td>
+                        <td>How to run your own Etherium Node<span class="dot beginner"></span>
+                            <br><br>
+                            <i>Orest Tarasiuk - zkWarsaw</i>
+                        </td>
                     </tr>
                     <tr>
-                        <td>How to run your own Etherium Node (05:00-05:30 PM)</td>
-                        <td>TBA</td>
+                        <td class="time-col">06:00PM<br>08:00PM</td>
+                        <td>Dinner</td>
+                        <td></td>
                     </tr>
-                    
                 </tbody>
             </table>
             
             <table class="schedule-table" id="30-05" >
                 <colgroup>
-                    <col style="width: 20%;">
-                    <col style="width: 60%;">
-                    <col style="width: 20%;">
+                    <col style="width: 5%;">
+                    <col style="width: 50%;">
+                    <col style="width: 45%;">
                 </colgroup>
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Name</th>
-                        <th>Speaker</th>
+                        <th>Event 1</th>
+                        <th>Event 2</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">08:00 AM</td>
+                        <td class="time-col">08:00AM<br>10:00AM</td>
                         <td>Breakfast</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:00 AM</td>
-                        <td>Intro to Scalability</td>
-                        <td>TBA</td>
+                        <td class="time-col" rowspan="3"></td>
+                        <td>Intro to Scalability<span class="dot beginner"></span>
+                            <br><br>
+                            <i>Orest Tarasiuk - zkWarsaw</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">10:40 AM</td>
-                        <td>Current State of L2</td>
-                        <td>TBA (L2Beat)</td>
+                        <td>Current State of L2<span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Luca Donno - L2Beat</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">11:20 AM</td>
-                        <td>Type 1 zk-EVMs</td>
-                        <td>TBA (Taiko)</td>
+                        <td>Sequencing rules in EVM blockchains<span class="dot expert"></span>
+                            <br><br>
+                            <i>Dias Alymbekov - Dune Analytics / TUM</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">12:00 PM</td>
+                        <td class="time-col">12:00PM<br>02:00PM</td>
                         <td>Lunch</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">02:00 PM</td>
-                        <td>Escape Hatches</td>
-                        <td>TBA</td>
+                        <td class="time-col" rowspan="2"></td>
+                        <td>Escape Hatches<span class="dot beginner"></span>
+                            <br><br>
+                            <i>Omar Espejel - Starknet Foundation</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col">02:40 PM</td>
-                        <td>Polygon Miden / Light Clients</td>
-                        <td>TBA</td>
+                        <td>Type 1 zk-EVMs<span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Junger Yucel - Taiko</i>
+                        </td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <td class="time-col" rowspan="3">04:00 PM</td>
+                        <td class="time-col">03:15<br>04:00PM</td>
+                        <td>Coffee Break</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col" rowspan="3"></td>
                         <td>Research Group</td>
+                        <td>Polygon Miden / Light Clients<span class="dot intermediate"></span>
+                            <br><br>
+                            <i>Paul-Henry - Polygon Labs</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Research Group</td>
+                        <td>Bitcoin Suisse Workshop<span class="dot beginner"></span>
+                            <br><br>
+                            <i>Wolfgang Vitale - Bitcoin Suisse</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Research Group</td>
+                        <td>Escape Room</span></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">06:00PM<br>08:00PM</td>
+                        <td>Gala Dinner</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Escape Room (04:00-04:40 PM)</td>
+                        <td class="time-col">08:00PM<br>11:00PM</td>
+                        <td>Rave</td>
                         <td></td>
-                    </tr>
-                    <tr>
-                        <td>Bitcoin Suisse Workshop (05:00-05:30 PM)</td>
-                        <td>TBA</td>
                     </tr>
                 </tbody>
             </table>
 
             <table class="schedule-table" id="31-05">
                 <colgroup>
-                    <col style="width: 20%;">
-                    <col style="width: 60%;">
-                    <col style="width: 20%;">
+                    <col style="width: 5%;">
+                    <col style="width: 50%;">
+                    <col style="width: 45%;">
                 </colgroup>
                 <thead>
                     <tr>
                         <th>Time</th>
-                        <th>Name</th>
-                        <th>Speaker</th>
+                        <th>Event 1</th>
+                        <th>Event 2</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="time-col">08:00 AM</td>
+                        <td class="time-col">08:00AM<br>10:00AM</td>
                         <td>Breakfast</td>
                         <td></td>
-                    </tr>    
+                    </tr>
+                    <tr>
+                        <td class="time-col">10:30AM</td>
+                        <td>Check out & Departure</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time-col">12:00PM</td>
+                        <td>Arrival in Leipzig</td>
+                        <td></td>
+                    </tr>   
                 </tbody>
             </table>
             
@@ -384,7 +546,24 @@
         }
     
         window.onload = function() {
-            showTable('27-05');
+            var date = new Date();
+            var offset = -date.getTimezoneOffset() / 60;
+            var cetOffset = 2; // CET is UTC+2
+            date.setHours(date.getHours() + offset + cetOffset);
+
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+
+            if (month === 5 && day >= 26 && day <= 31) {
+                // If it's between 26th and 31st of May, show the table for that day
+                showTable(('0' + day).slice(-2) + '-05');
+            } else if (month > 5 || (month === 5 && day > 31)) {
+                // If it's after May, always show the table for 31st of May
+                showTable('31-05');
+            } else {
+                // If it's before 26th of May, always show the table for 26th of May
+                showTable('26-05');
+            }
         };
     </script>
     

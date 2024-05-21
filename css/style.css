@@ -249,6 +249,30 @@ a.emphasize:hover {
   width: auto;
 }
 
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.beginner {
+  background-color: green;
+}
+
+.intermediate {
+  background-color: orange;
+}
+
+.advanced {
+  background-color: red;
+}
+
+.expert {
+  background-color: purple;
+}
+
 
 /* Adaptive Layout ------------------------------------------ */
 
