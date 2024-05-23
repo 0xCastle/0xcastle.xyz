@@ -269,6 +269,35 @@ a.emphasize:hover {
   background-color: purple;
 }
 
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  color: white;
+}
+
+.badge.MEV {
+  background-color: #007bff;
+}
+
+.badge.rollups {
+  background-color: #28a745;
+}
+
+.badge.cryptography {
+  background-color: #FA8072;
+}
+
+.badge.miscellaneous {
+  background-color: gray;
+}
+
+.badge.activities {
+  background-color: purple;
+}
+
 
 /* Adaptive Layout ------------------------------------------ */
 
